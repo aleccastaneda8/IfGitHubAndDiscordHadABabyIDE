@@ -6,4 +6,4 @@ Erik Isaacson,
 Julia Schmidt,
 Sean Selover,
 Zachary Monroe,
-Alec Castaneda,
+Alec Castaneda
