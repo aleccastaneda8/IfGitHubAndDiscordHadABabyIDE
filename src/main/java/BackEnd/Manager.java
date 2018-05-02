@@ -1,4 +1,4 @@
-package BackEnd;
+package main.java.BackEnd;
 
 public class Manager {
     //TODO - brainstorm fields
