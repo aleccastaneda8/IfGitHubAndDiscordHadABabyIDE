@@ -1,4 +1,25 @@
-package main.java.database.management;
+package database.management;
+import core.management.AConfiguration;
+import nu.xom.Element;
 
-public class DBConfiguration {
+import java.util.Vector;
+public class DBConfiguration extends AConfiguration {
+
+    @Override
+    public void update(Vector chosenConfigs) {
+    }
+
+    @Override
+    public void load(Element configFromStorage) {
+    }
+
+    @Override
+    public ConfigType getType() {
+        return null;
+    }
+
+    @Override
+    public boolean hasChanged() {
+        return false;
+    }
 }

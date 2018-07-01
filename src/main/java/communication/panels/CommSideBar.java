@@ -1,4 +1,4 @@
-package main.java.communication.panels;
+package communication.panels;
 
 public class CommSideBar {
 }

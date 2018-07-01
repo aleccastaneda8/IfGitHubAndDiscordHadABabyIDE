@@ -1,4 +1,4 @@
-package main.java.communication.management;
+package communication.management;
 
 public class Role {
 }

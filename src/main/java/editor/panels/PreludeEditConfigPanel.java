@@ -1,4 +1,3 @@
-package main.java.editor.panels;
-
+package editor.panels;
 public class PreludeEditConfigPanel {
 }

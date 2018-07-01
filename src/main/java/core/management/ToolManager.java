@@ -1,4 +1,4 @@
-package main.java.core.management;
+package core.management;
 
 public class ToolManager {
 }

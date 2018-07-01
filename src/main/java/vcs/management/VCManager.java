@@ -1,4 +1,4 @@
-package main.java.vcs.management;
+package vcs.management;
 
 public class VCManager {
 }

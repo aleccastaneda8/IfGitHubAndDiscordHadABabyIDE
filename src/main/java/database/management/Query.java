@@ -1,4 +1,4 @@
-package main.java.database.management;
+package database.management;
 
 public class Query {
 }

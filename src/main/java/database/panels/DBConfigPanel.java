@@ -1,4 +1,4 @@
-package main.java.database.panels;
+package database.panels;
 
 public class DBConfigPanel {
 }

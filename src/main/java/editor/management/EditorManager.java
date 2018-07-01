@@ -1,4 +1,4 @@
-package main.java.editor.management;
+package editor.management;
 
 public class EditorManager {
 }

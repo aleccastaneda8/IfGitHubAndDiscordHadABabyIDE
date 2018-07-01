@@ -1,4 +1,4 @@
-package main.java.communication.server;
+package communication.server;
 
 public class Server {
 }

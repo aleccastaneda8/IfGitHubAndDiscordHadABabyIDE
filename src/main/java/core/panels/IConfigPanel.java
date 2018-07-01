@@ -1,4 +1,4 @@
-package main.java.core.panels;
+package core.panels;
 
 public interface IConfigPanel {
 }

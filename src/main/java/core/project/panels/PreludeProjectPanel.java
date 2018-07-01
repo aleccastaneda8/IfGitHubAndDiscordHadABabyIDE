@@ -1,4 +1,4 @@
-package main.java.core.project.panels;
+package core.project.panels;
 
 public class PreludeProjectPanel {
 }

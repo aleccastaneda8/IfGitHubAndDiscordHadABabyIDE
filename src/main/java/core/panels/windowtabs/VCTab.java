@@ -1,4 +1,4 @@
-package main.java.core.panels.windowtabs;
+package core.panels.windowtabs;
 
 public class VCTab {
 }

@@ -1,4 +1,24 @@
-package main.java.vcs.management;
+package vcs.management;
+import core.management.AConfiguration;
+import nu.xom.Element;
 
-public class VCConfiguration {
+import java.util.Vector;
+public class VCConfiguration extends AConfiguration {
+    @Override
+    public void update(Vector chosenConfigs) {
+    }
+
+    @Override
+    public void load(Element configFromStorage) {
+    }
+
+    @Override
+    public ConfigType getType() {
+        return null;
+    }
+
+    @Override
+    public boolean hasChanged() {
+        return false;
+    }
 }

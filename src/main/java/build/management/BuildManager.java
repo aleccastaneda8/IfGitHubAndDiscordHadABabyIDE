@@ -1,4 +1,4 @@
-package main.java.build.management;
+package build.management;
 
 public class BuildManager {
 }

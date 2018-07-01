@@ -1,4 +1,4 @@
-package main.java.style.panels;
+package style.panels;
 
 public class PreludeStyleConfigPanel {
 }

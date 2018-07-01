@@ -1,4 +1,4 @@
-package main.java.vcs.panels;
+package vcs.panels;
 
 public class PreludeVCConfigPanel {
 }

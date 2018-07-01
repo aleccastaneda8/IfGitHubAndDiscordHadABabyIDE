@@ -1,4 +1,4 @@
-package main.java.communication.client;
+package communication.client;
 
 public class Client {
 }

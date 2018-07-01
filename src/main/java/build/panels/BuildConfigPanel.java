@@ -1,4 +1,4 @@
-package main.java.build.panels;
+package build.panels;
 
 public class BuildConfigPanel {
 }

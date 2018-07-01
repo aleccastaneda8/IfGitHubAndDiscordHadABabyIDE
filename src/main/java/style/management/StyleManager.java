@@ -1,4 +1,4 @@
-package main.java.style.management;
+package style.management;
 
 public class StyleManager {
 }

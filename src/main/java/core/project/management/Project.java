@@ -1,4 +1,4 @@
-package main.java.core.project.management;
+package core.project.management;
 
 public class Project {
 }

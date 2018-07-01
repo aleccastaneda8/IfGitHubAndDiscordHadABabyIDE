@@ -1,4 +1,25 @@
-package main.java.style.management;
+package style.management;
+import core.management.AConfiguration;
+import nu.xom.Element;
 
-public class StyleConfiguration {
+import java.util.Vector;
+public class StyleConfiguration extends AConfiguration {
+
+    @Override
+    public void update(Vector chosenConfigs) {
+    }
+
+    @Override
+    public void load(Element configFromStorage) {
+    }
+
+    @Override
+    public ConfigType getType() {
+        return null;
+    }
+
+    @Override
+    public boolean hasChanged() {
+        return false;
+    }
 }
