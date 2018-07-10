@@ -1,0 +1,10 @@
+<!ELEMENT config (project, buildTool, buildScript, dependencies, runConfigurations)>
+<!ATTLIST config type (build) #REQUIRED>
+    <!ELEMENT project EMPTY><!ATTLIST project name #REQUIRED>
+    <!ELEMENT buildTool EMPTY><!ATTLIST buildTool name #REQUIRED>
+    <!ELEMENT buildScript EMPTY><!ATTLIST buildScript filePath #REQUIRED>
+    <!ELEMENT dependencies (dependency)>
+        <!ELEMENT dependency EMPTY><!ATTLIST dependency name filePath url #REQUIRED>
+    <!ELEMENT runConfigurations (runConfig)>
+        <!ELEMENT runConfig (tasks)><!ATTLIST runConfig name #REQUIRED>
+            <!ELEMENT tasks EMPTY><!ATTLIST tasks name taskOrder #REQUIRED>

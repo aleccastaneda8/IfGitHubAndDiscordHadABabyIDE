@@ -10,6 +10,4 @@ public interface IManager {
     Element parse(AConfiguration configsToParse);
     void requestData(IManager subsystemManager);
     AConfiguration getConfig(String elementName);
-    boolean isBusy();
-
 }

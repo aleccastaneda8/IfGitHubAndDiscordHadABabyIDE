@@ -1,0 +1,43 @@
+<!ELEMENT config (general, highlighter, codeStyle, languages, templates)>
+<!ATTLIST config type (editor) #REQUIRED>
+    <!ELEMENT general (line)>
+        <!ELEMENT line (indent)><!ATTLIST line wordwrap autoTab #REQUIRED>
+            <!ELEMENT indent EMPTY><!ATTLIST indent tab spaceCount #REQUIRED>
+    <!ELEMENT highlighter EMPTY><!ATTLIST highlighter stylePath #REQUIRED>
+    <!ELEMENT codeStyle (method, class, abstract, interface)><!ATTLIST codeStyle name #REQUIRED>
+        <!ELEMENT method EMPTY><!ATTLIST method headerCase bracePlace #REQUIRED>
+        <!ELEMENT class EMPTY><!ATTLIST class headerCase bracePlace #REQUIRED>
+        <!ELEMENT abstract EMPTY><!ATTLIST abstract headerCase bracePlace #REQUIRED>
+        <!ELEMENT interface EMPTY><!ATTLIST interface headerCase bracePlace #REQUIRED>
+    <!ELEMENT languages (language)>
+        <!ELEMENT language EMPTY><!ATTLIST language name version execPath #REQUIRED>
+    <!ELEMENT templates (template)>
+        <!ELEMENT template (fileTempl, classTmpl, abstractTmpl, interfaceTmpl)><!ATTLIST template name language #REQUIRED>
+            <!ELEMENT fileTempl (libraries)><!ATTLIST fileTempl fileExt#REQUIRED>
+                <!ELEMENT libraries (library)><!ATTLIST libraries libResWord #REQUIRED>
+                    <!ELEMENT library EMPTY><!ATTLIST library libPath #REQUIRED>
+            <!ELEMENT classTmpl (cImplements, cVars, cMethods)><!ATTLIST classTmpl name inherit #REQUIRED>
+                <!ELEMENT cImplements (cImplement)>
+                    <!ELEMENT cImplement EMPTY><!ATTLIST cImplement name #REQUIRED>
+                <!ELEMENT cVars (cVar)>
+                    <!ELEMENT cVar EMPTY><!ATTLIST cVar name dataType accessMod nonAccessMod #REQUIRED>
+                <!ELEMENT cMethods (cMethod)>
+                    <!ELEMENT cMethod (cParams)><!ATTLIST cMethod name dataType accessMod nonAccessMod #REQUIRED>
+                        <!ELEMENT cParams (cParam)>
+                            <!ELEMENT cParam EMPTY><!ATTLIST cParam name val #REQUIRED>
+            <!ELEMENT abstractTmpl (aImplements, aVars, aMethods)><!ATTLIST abstractTmpl name inherit #REQUIRED>
+                <!ELEMENT aImplements (aImplement)>
+                    <!ELEMENT aImplement EMPTY><!ATTLIST aImplement name #REQUIRED>
+                <!ELEMENT aVars (aVar)>
+                    <!ELEMENT aVar EMPTY><!ATTLIST aVar name dataType accessMod nonAccessMod #REQUIRED>
+                <!ELEMENT aMethods (aMethod)>
+                    <!ELEMENT aMethod (aParams)><!ATTLIST aMethod name dataType accessMod nonAccessMod #REQUIRED>
+                        <!ELEMENT aParams (aParam)>
+                            <!ELEMENT aParam EMPTY><!ATTLIST aParam name val #REQUIRED>
+            <!ELEMENT interfaceTmpl (iConst, iMethods)><!ATTLIST interfaceTmpl name inherit #REQUIRED>
+                <!ELEMENT iConsts (iConst)>
+                    <!ELEMENT iConst EMPTY><!ATTLIST iConst name dataType accessMod nonAccessMod #REQUIRED>
+                <!ELEMENT iMethods (iMethod)>
+                    <!ELEMENT iMethod (iParams)><!ATTLIST iMethod name dataType accessMod nonAccessMod #REQUIRED>
+                        <!ELEMENT iParams (iParam)>
+                            <!ELEMENT iParam EMPTY><!ATTLIST iParam name val #REQUIRED>

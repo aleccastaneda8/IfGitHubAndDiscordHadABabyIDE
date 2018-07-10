@@ -4,6 +4,7 @@ import nu.xom.Element;
 
 import java.io.Serializable;
 import java.util.Vector;
+
 public abstract class AConfiguration {
 
     public enum ConfigType {STYLE,VC,EDITOR,BUILD,COMM,DB}

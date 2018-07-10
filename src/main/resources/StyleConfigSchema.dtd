@@ -1,0 +1,6 @@
+<!ELEMENT config (notifications, toolbars, tabs, css)>
+<!ATTLIST config type (style) #REQUIRED>
+    <!ELEMENT css EMPTY><!ATTLIST css filepath #REQUIRED>
+    <!ELEMENT notifications EMPTY><!ATTLIST notifications xcoord ycoord visible #REQUIRED>
+    <!ELEMENT toolbars EMPTY><!ATTLIST toolbars count #REQUIRED>
+    <!ELEMENT tabs EMPTY><!ATTLIST tabs drag float #REQUIRED>
